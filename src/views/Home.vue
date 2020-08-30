@@ -35,7 +35,6 @@
 <script>
 import Table from "./../components/Table.vue";
 import Loading from "./../components/Loading.vue";
-import Header from "./../components/Header.vue";
 
 import axios from "axios";
 import { getEvents } from "./../services";
