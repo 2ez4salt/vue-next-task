@@ -53,7 +53,6 @@ export default {
   components: {
     Table,
     Loading,
-    Header,
   },
   methods: {
     async searchEvent(input) {
