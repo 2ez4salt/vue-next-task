@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Table from "./components/Table.vue";
+import Loading from "./components/Loading.vue";
+
+import axios from "axios";
+import { getEvents } from "./services";
 
 export default {
-  name: 'App',
+  name: "App",
+  data: function () {
+    return {
+      input: "",
+      result: [],
+      events: [],
+      status: 0,
+      state: 0,
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    Table,
+    Loading,
+  },
+
+  setup() {
+    console.log("hello app");
+  },
+};
 </script>
