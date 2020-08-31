@@ -47,7 +47,7 @@
     Previous
   </button>
   <button
-    :disabled="count + 10 >= this.events.length"
+    :disabled="count >= this.events.length"
     v-if="events.length !== 0"
     @click="next()"
     style="margin: 10px"
